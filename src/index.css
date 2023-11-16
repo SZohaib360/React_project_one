@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header.sticky {
+  position: fixed;
+  width: 100%;
+  animation: stickyheader .4s linear ;
+}
+.btn-scroll{
+  visibility: hidden;
+  opacity: 0;
+}
+.btn-scroll.show{
+  visibility: visible;
+  opacity: 1 ;
+  
+}
+
+
+@keyframes stickyheader{
+  0%{
+      transform: translateY(-100px);
+  }
+  100%{
+      transform: translateY(0%);
+  }
+}
+
+.hideCanvas {
+  left: -100% !important;;
+}
+
+.filter-active{
+  background-color: #46006b;
+  color: white;
+}
